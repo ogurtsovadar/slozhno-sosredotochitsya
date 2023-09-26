@@ -9,4 +9,51 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --main-font: 'IBM Plex mono', sans-serif;
+  --main-font-size: 18px;
+  --background-color: #000028;
+  --main-title-color: #db00ff;
+  --title-color: #ff0070;
+  --subtitle-color: #000028;
+  --paragraph-color: #f1b2ce;
+  --menu-color: #ff0070;
+  --accent-color: #ff0070;
+  --decorative-color: #ff0070;
+  --default-color: #ff0070;
+  --hover-color: #f1b2ce;
+  --hover-color-rgb: 255, 0, 112;
+  --focus-color: #f1b2ce;
+  --header-image: url(/images/cover-image-dark.png);
+  --page-padding: 10px;
+  --large-margin: 50px;
+  --medium-margin: 40px;
+  --small-margin: 20px;
+  --nano-margin: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --main-font: 'IBM Plex mono', sans-serif;
+    --main-font-size: 18px;
+    --background-color: #000028;
+    --main-title-color: #db00ff;
+    --title-color: #ff0070;
+    --subtitle-color: #000028;
+    --paragraph-color: #f1b2ce;
+    --menu-color: #ff0070;
+    --accent-color: #ff0070;
+    --decorative-color: #ff0070;
+    --default-color: #ff0070;
+    --hover-color: #f1b2ce;
+    --hover-color-rgb: 255, 0, 112;
+    --focus-color: #f1b2ce;
+    --header-image: url(/images/cover-image-dark.png);
+    --page-padding: 10px;
+    --large-margin: 50px;
+    --medium-margin: 40px;
+    --small-margin: 20px;
+    --nano-margin: 10px;
+  }
 }

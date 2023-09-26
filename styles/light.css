@@ -9,4 +9,62 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --main-font: 'IBM Plex mono', sans-serif;
+  --main-font-size: 18px;
+  --background-color: #fff1f7;
+  --main-title-color: #ffc2e6;
+  --title-color: #353430;
+  --subtitle-color: #353430;
+  --paragraph-color: #353430;
+  --menu-color: #353430;
+  --accent-color: #ff8dcb;
+  --decorative-color: #353430;
+  --default-color: #353430;
+  --hover-color: #353430;
+  --hover-color-rgb: 0, 49, 45;
+  --focus-color: #353430;
+  --header-image: url(/images/cover-image-light.png);
+  --page-padding: 10px;
+  --large-margin: 50px;
+  --medium-margin: 40px;
+  --small-margin: 20px;
+  --nano-margin: 10px;
+}
+
+.page.theme_light .header__decorated-element {
+  visibility: hidden;
+}
+
+/* скопировала весь код из styles.css и меняю запасные значения */
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --main-font: 'IBM Plex mono', sans-serif;
+    --main-font-size: 18px;
+    --background-color: #fff1f7;
+    --main-title-color: #ffc2e6;
+    --title-color: #353430;
+    --subtitle-color: #353430;
+    --paragraph-color: #353430;
+    --menu-color: #353430;
+    --accent-color: #ff8dcb;
+    --decorative-color: #353430;
+    --default-color: #353430;
+    --hover-color: #353430;
+    --hover-color-rgb: 0, 49, 45;
+    --focus-color: #353430;
+    --header-image: url(/images/cover-image-light.png);
+    --page-padding: 10px;
+    --large-margin: 50px;
+    --medium-margin: 40px;
+    --small-margin: 20px;
+    --nano-margin: 10px;
+  }
+
+  .page.theme_light .header__decorated-element,
+  .page.theme_auto .header__decorated-element {
+    visibility: hidden;
+  }
 }

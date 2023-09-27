@@ -10,7 +10,6 @@
 .header {
   position: relative;
   display: grid;
-/*   grid-template-rows: 1fr min-content 1fr; */
   padding-block: var(--page-padding, 10px);
   padding-inline: var(--page-padding, 10px);
   background-color: var(--background-color, #000028);
@@ -19,7 +18,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-block-end: var(--medium-margin, 40px);
-  block-size: 100%;
+  max-block-size: 100vh;
 }
 
 .decorated-zone {
@@ -223,7 +222,8 @@
 .footer {
   padding-inline: var(--page-padding, 10px);
   padding-block: var(--page-padding, 10px);
-  block-size: 100%;
+  max-block-size: 100vh;
+
 }
 
 .footer__title {

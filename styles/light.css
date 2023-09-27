@@ -24,7 +24,7 @@
   --hover-color: #353430;
   --hover-color-rgb: 0, 49, 45;
   --focus-color: #353430;
-  --header-image: url(/images/cover-image-light.png);
+  --header-image: url(../images/cover-image-light.png);
   --page-padding: 10px;
   --large-margin: 50px;
   --medium-margin: 40px;
@@ -55,7 +55,7 @@
     --hover-color: #353430;
     --hover-color-rgb: 0, 49, 45;
     --focus-color: #353430;
-    --header-image: url(/images/cover-image-light.png);
+    --header-image: url(../images/cover-image-light.png);
     --page-padding: 10px;
     --large-margin: 50px;
     --medium-margin: 40px;

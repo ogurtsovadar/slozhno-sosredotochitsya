@@ -10,7 +10,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(3, dense);
+/*   grid-template-rows: 1fr min-content 1fr; */
   padding-block: var(--page-padding, 10px);
   padding-inline: var(--page-padding, 10px);
   background-color: var(--background-color, #000028);
@@ -19,10 +19,10 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-block-end: var(--medium-margin, 40px);
+  block-size: 100%;
 }
 
 .decorated-zone {
-  display: grid;
   position: relative;
 }
 
@@ -78,8 +78,8 @@
 }
 
 .header__theme-menu {
-  margin-block-start: 63.5px; /* есть ли резина? */
-  margin-block-end: 64px; /* есть ли резина? */
+  margin-block-start: 63.5px;
+  margin-block-end: 64px;
 }
 
 .header__theme-menu-list {
@@ -130,14 +130,13 @@
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
-  margin-block-end: 55px; /* есть ли резина? */
+  margin-block-end: 55px;
 }
 
 .header__paragraph {
   justify-self: end;
-  white-space: pre-line;
-  margin-block-end: 56px; /* есть ли резина? */
-  font-weight: 700;
+/*   white-space: pre-line; */
+  margin-block-end: 56px;
 }
 
 .title-decor {
@@ -147,6 +146,7 @@
   font-size: var(--main-font-size, 18px);
   font-style: normal;
   line-height: 130%;
+  font-weight: 700;
 }
 
 /* Секции */
@@ -223,11 +223,13 @@
 .footer {
   padding-inline: var(--page-padding, 10px);
   padding-block: var(--page-padding, 10px);
-  min-block-size: 667px;
+  block-size: 100%;
 }
 
 .footer__title {
-  display: inline-block;
+  display: grid;
+  justify-items: center;
+  margin-block: 50%;
   color: var(--main-title-color, #db00ff);
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
   font-family: var(--main-font);
@@ -235,11 +237,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  margin-block: auto;
-  margin-inline: auto;
 }
 
-/* Адаптивы */
+/* Брейкпоинты */
 
 @media (width >= 768px) {
 
@@ -264,20 +264,19 @@
   }
 
   .header__theme-menu {
-    margin-block-start: 170px; /* есть ли резина? */
-    margin-block-end: 171px; /* есть ли резина? */
+    margin-block-start: 170px; 
+    margin-block-end: 171px; 
   }
 
   .header__title {
-    margin-block-end: 162px; /* есть ли резина? */
+    margin-block-end: 162px; 
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     position: relative;
     left: -20px;
   }
 
   .header__paragraph {
-    --page-padding: 20px;
-    margin-block-end: 163px; /* есть ли резина? */
+    margin-block-end: 163px; 
     max-inline-size: 364px;
   }
 
@@ -363,7 +362,7 @@
 
   .header__theme-menu {
     margin-block-start: 0;
-    margin-block-end: 274.5px; /* нужна резина */
+    margin-block-end: 272.5px;
   }
 
   .header__theme-menu-list {
@@ -399,7 +398,7 @@
     min-inline-size: 315px;
   }
 
-  .footer__title {
-    margin-block: 299px;
+  .footer__title { 
+    margin-block: 300px;
   }
 }

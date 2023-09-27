@@ -229,7 +229,7 @@
 .footer__title {
   display: grid;
   justify-items: center;
-  margin-block: 50%;
+  margin-block: 276px;
   color: var(--main-title-color, #db00ff);
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
   font-family: var(--main-font);
@@ -265,7 +265,7 @@
 
   .header__theme-menu {
     margin-block-start: 170px; 
-    margin-block-end: 171px; 
+    margin-block-end: 171px;
   }
 
   .header__title {

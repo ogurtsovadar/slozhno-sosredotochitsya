@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --main-font: 'IBM Plex mono', sans-serif;
+  --main-font: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --background-color: #fff1f7;
   --main-title-color: #ffc2e6;
@@ -36,12 +36,10 @@
   visibility: hidden;
 }
 
-/* скопировала весь код из styles.css и меняю запасные значения */
-
 @media (prefers-color-scheme: light) {
 
   :root {
-    --main-font: 'IBM Plex mono', sans-serif;
+    --main-font: 'IBM Plex mono', monospace;
     --main-font-size: 18px;
     --background-color: #fff1f7;
     --main-title-color: #ffc2e6;
@@ -67,4 +65,14 @@
   .page.theme_auto .header__decorated-element {
     visibility: hidden;
   }
+
+
+  .page.theme_light .header__title,
+  .page.theme_auto .header__title  {
+
+    @media (width >= 1024px) {
+      --accent-color: #ff0070;
+    }
+  }
 }
+
